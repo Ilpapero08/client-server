@@ -23,10 +23,10 @@ public class Main {
         while (true) {
             System.out.println("Inserisci il testo da mandare: ");
             testo = scanner.nextLine();
+            out.println(testo);
             if(testo.equals("exit")){
                 break;
             }
-            out.println(testo);
             System.out.println(in.readLine());
         }
         System.out.println("Finito, e' stato mandato l'exit");

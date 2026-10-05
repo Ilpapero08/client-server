@@ -20,12 +20,15 @@ public class Main {
 
         String s = "pippo";
 
-        while (s!="EXIT") {
+        while (true) {
             s = in.readLine();
             s = s.toUpperCase();
+            if(s.equals("EXIT")){
+                break;
+            }
             out.println(s);
-            
         }   
+        System.out.println("Finito, e' stato mandato l'exit");
         
     }
 }
